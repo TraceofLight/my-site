@@ -5,5 +5,4 @@ WORKDIR /app
 COPY ./frontend/my-site /app
 RUN npm install
 RUN npm run build
-
-CMD ["npm","run","preview"]
+RUN cp -R /app/dist ./mount/frontend
