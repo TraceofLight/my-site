@@ -5,4 +5,5 @@ WORKDIR /app
 COPY ./frontend/my-site /app
 RUN npm install
 RUN npm run build
-RUN cp -R /app/dist ./mount/frontend
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
