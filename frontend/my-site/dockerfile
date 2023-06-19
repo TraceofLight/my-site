@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY ./frontend/my-site /app
 RUN npm install
-CMD npm run build
+RUN npm run build
+
+CMD npm run dev
